@@ -1,0 +1,9 @@
+public Block(int blockNumber, String previousHash, String data) {
+        this.blockNumber = blockNumber;
+        this.previousHash = previousHash;
+        this.data = data;
+        this.hash = calculateHash();
+    }
+
+    private String calculateHash() {
+        String input = blockNumber + previousHash + data;
