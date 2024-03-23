@@ -1,0 +1,12 @@
+return null;
+    }
+
+    // Getters and setters
+
+    public int getBlockNumber() {
+        return blockNumber;
+    }
+
+    public void setBlockNumber(int blockNumber) {
+        this.blockNumber = blockNumber;
+    }
