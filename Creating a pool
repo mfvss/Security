@@ -1,0 +1,8 @@
+java
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadPoolExample {
+    public static void main(String[] args) {
+        // Создание пула потоков с фиксированным количеством потоков
+        ExecutorService executor = Executors.newFixedThreadPool(5);
