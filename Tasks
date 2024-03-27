@@ -1,0 +1,13 @@
+// Подготовка задач для выполнения
+        Runnable task1 = new MyTask(1);
+        Runnable task2 = new MyTask(2);
+        Runnable task3 = new MyTask(3);
+        Runnable task4 = new MyTask(4);
+        Runnable task5 = new MyTask(5);
+
+        // Передача задач на выполнение пулу потоков
+        executor.execute(task1);
+        executor.execute(task2);
+        executor.execute(task3);
+        executor.execute(task4);
+        executor.execute(task5);
