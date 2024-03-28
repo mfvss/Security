@@ -1,0 +1,17 @@
+// Завершение работы пула потоков после выполнения всех задач
+        executor.shutdown();
+    }
+
+    static class MyTask implements Runnable {
+        int taskId;
+
+        public MyTask(int taskId) {
+            this.taskId = taskId;
+        }
+
+        @Override
+        public void run() {
+            System.out.println("Task #" + taskId + " is running in thread: " + Thread.currentThread().getName());
+        }
+    }
+}
