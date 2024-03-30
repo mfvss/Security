@@ -1,0 +1,6 @@
+int main() {
+  const size_t usernameLimit = 16; // Maximum allowed username length
+  std::string username;
+
+  std::cout << "Enter username: ";
+  std::getline(std::cin, username);
