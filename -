@@ -1,0 +1,8 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+// Function to validate user input within a specific size limit
+bool validateInput(const std::string& input, size_t limit) {
+  return input.size() <= limit;
+}
