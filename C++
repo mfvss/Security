@@ -1,0 +1,12 @@
+// Validate user input to prevent buffer overflows
+  if (validateInput(username, usernameLimit)) {
+    std::cout << "Username accepted: " << username << std::endl;
+  } else {
+    std::cerr << "Error: Username too long. Please enter a shorter username." << std::endl;
+    return 1; // Indicate error
+  }
+
+  // ... rest of your program logic ...
+
+  return 0;
+}
