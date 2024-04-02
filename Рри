@@ -1,0 +1,6 @@
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
+
+public class SecureData {
+
+    private static final String ENCRYPTION_KEY = "StrongSecretKey!"; // Replace with a strong key
