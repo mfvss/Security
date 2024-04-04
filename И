@@ -1,0 +1,7 @@
+public static String decryptData(String encryptedData) throws Exception {
+        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+        SecretKeySpec keySpec = new SecretKeySpec(ENCRYPTION_KEY.getBytes(), "AES");
+        cipher.init(Cipher.DECRYPT_MODE, keySpec);
+        byte[] decrypted = cipher.doFinal(Base64.getDecoder().decode(encryptedData));
+        return new String(decrypted);
+    }
