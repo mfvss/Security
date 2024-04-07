@@ -1,0 +1,6 @@
+// Return a complex object to the pool
+  void release(std::unique_ptr<T>&& object) {
+    // Reset the object's state (optional)
+    object->~T(); // Call destructor to potentially clean internal state
+    freeObjects_.push_back(std::move(*object));
+  }
