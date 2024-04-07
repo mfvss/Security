@@ -1,0 +1,19 @@
+#include <memory>
+#include <vector>
+#include <complex>
+
+template <typename T>
+class ComplexPool {
+public:
+  // Get a complex object from the pool
+  std::unique_ptr<T> get() {
+    if (freeObjects_.empty()) {
+      // No free objects, create a new one
+      return std::make_unique<T>();
+    } else {
+      // Take an object from the free list and mark it used
+      std::unique_ptr<T> object(std::move(freeObjects_.back()));
+      freeObjects_.pop_back();
+      return object;
+    }
+  }
