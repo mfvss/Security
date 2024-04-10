@@ -1,0 +1,6 @@
+private:
+  std::vector<std::unique_ptr<T>> freeObjects_;
+};
+
+int main() {
+  ComplexPool<std::complex<double>> pool;
