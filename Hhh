@@ -1,0 +1,12 @@
+// Get two complex objects from the pool
+  auto object1 = pool.get();
+  auto object2 = pool.get();
+
+  // Use the objects...
+
+  // Return the objects to the pool
+  pool.release(std::move(object1));
+  pool.release(std::move(object2));
+
+  return 0;
+}
