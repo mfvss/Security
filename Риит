@@ -1,0 +1,2 @@
+PBEKeySpec spec = new PBEKeySpec(password.toCharArray(), salt, ITERATIONS, KEY_LENGTH);
+        SecretKeyFactory skf = SecretKeyFactory.getInstance(ALGORITHM);
