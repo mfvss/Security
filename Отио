@@ -1,0 +1,5 @@
+byte[] hash = skf.generateSecret(spec).getEncoded();
+
+        // Combine salt and hash for storage
+        return Base64.getEncoder().encodeToString(salt) + ":" + Base64.getEncoder().encodeToString(hash);
+    }
