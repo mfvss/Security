@@ -1,0 +1,2 @@
+// Time-constant comparison to prevent timing attacks
+    private static boolean slowEquals(byte[] a, byte[] b) {
