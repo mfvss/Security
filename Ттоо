@@ -1,0 +1,3 @@
+byte[] actualHash = hashPassword(providedPassword).split(":")[1].getBytes();
+        return slowEquals(expectedHash, actualHash);
+    }
